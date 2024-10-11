@@ -1,10 +1,9 @@
-package com.kmm.postsapp
+package com.kmm.postsapp.util
 
-import com.kmm.postsapp.util.Dispatcher
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 
-internal class AndroidDispatcher : Dispatcher {
+internal class AndroidDispatcher: Dispatcher{
     override val io: CoroutineDispatcher
         get() = Dispatchers.IO
 }

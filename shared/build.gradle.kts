@@ -27,14 +27,13 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(libs.bundles.ktor)
+            implementation(libs.kotlinx.coroutines.core)
             api(libs.koin.core)
-            implementation(libs.koin.bom)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
             implementation(libs.lifecycle.viewmodel)
             implementation(libs.navigation.compose)
             implementation(libs.ktor.client.core)
-            implementation(libs.kotlinx.coroutines.core)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -50,6 +49,7 @@ kotlin {
 
         iosMain.dependencies {
             implementation(libs.ktor.client.darwin)
+            implementation(libs.kotlinx.coroutines.core)
         }
     }
 }
