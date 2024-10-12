@@ -19,6 +19,7 @@ This is a sample KMM project which tries to shares as much as code possible betw
 
 Android App                          |  iOS App
 :-------------------------:|:-------------------------:
+<img src="https://github.com/ramaraokotu/KMMPostsApp/blob/main/android.png" width="400" height="800">  | <img src="https://github.com/ramaraokotu/KMMPostsApp/blob/main/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-10-13%20at%2004.21.15.png" width="400" height="800">
 
 ## Built with 
 
