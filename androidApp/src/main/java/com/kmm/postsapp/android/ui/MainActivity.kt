@@ -11,8 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import com.kmm.postsapp.android.R
-import com.kmm.postsapp.android.ui.PostListScreen.PostViewModel
-import com.kmm.postsapp.android.ui.PostListScreen.PostsListRoute
+import com.kmm.postsapp.android.ui.post_list_screen.PostViewModel
+import com.kmm.postsapp.android.ui.post_list_screen.PostsListRoute
 import org.koin.android.ext.android.inject
 
 class MainActivity : ComponentActivity() {

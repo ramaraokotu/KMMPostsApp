@@ -1,4 +1,4 @@
-package com.kmm.postsapp.android.ui.PostListScreen
+package com.kmm.postsapp.android.ui.post_list_screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
