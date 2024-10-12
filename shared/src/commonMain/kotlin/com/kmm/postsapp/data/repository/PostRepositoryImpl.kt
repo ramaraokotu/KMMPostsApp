@@ -9,6 +9,6 @@ internal class PostRepositoryImpl(
 ) : PostRepository {
 
     override suspend fun fetchPosts(): List<Post> {
-        return remoteDateSource.getPosts().posts
+        return remoteDateSource.getPosts()
     }
 }

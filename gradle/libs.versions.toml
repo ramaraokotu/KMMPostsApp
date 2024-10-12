@@ -9,9 +9,8 @@ koin = "4.0.0"
 koinComposeMultiplatform = "1.2.0-Beta4"
 navigationCompose = "2.8.0-alpha02"
 lifecycleViewModel = "2.8.6"
-coroutines = "1.9.0"
-
-
+coroutines = "1.7.3"
+lifecycleLivedataCoreKtx = "2.8.6"
 
 
 [libraries]
@@ -35,7 +34,7 @@ ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "k
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 
 #Dependency injection
-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycleViewModel"}
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycleViewModel" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
@@ -47,6 +46,7 @@ navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-co
 #Coroutines
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+androidx-lifecycle-livedata-core-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-core-ktx", version.ref = "lifecycleLivedataCoreKtx" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

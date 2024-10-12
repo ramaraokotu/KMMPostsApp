@@ -4,6 +4,7 @@ import com.kmm.postsapp.data.datasource.PostDataSource
 import com.kmm.postsapp.data.datasource.PostService
 import com.kmm.postsapp.data.repository.PostRepository
 import com.kmm.postsapp.data.repository.PostRepositoryImpl
+import com.kmm.postsapp.ui.PostViewModel
 import com.kmm.postsapp.util.provideDispatcher
 import org.koin.dsl.module
 
@@ -18,6 +19,7 @@ private val utilityModule = module {
 
 private val domainModule = module {
     single<PostRepository> { PostRepositoryImpl(get()) }
+    single { PostViewModel(get()) }
 }
 
 private val sharedModules = listOf(domainModule, dataSourceModule, utilityModule)

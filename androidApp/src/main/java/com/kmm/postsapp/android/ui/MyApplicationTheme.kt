@@ -1,4 +1,4 @@
-package com.kmm.postsapp.android
+package com.kmm.postsapp.android.ui
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.shape.RoundedCornerShape
