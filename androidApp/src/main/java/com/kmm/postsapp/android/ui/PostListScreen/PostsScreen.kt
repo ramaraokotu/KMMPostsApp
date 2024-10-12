@@ -1,4 +1,4 @@
-package com.kmm.postsapp.android.ui
+package com.kmm.postsapp.android.ui.PostListScreen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -8,7 +8,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.kmm.postsapp.data.model.Post
-import com.kmm.postsapp.ui.PostViewModel
 import com.kmm.postsapp.util.UiState
 
 @Composable

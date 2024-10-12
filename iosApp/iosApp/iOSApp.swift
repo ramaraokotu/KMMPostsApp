@@ -4,13 +4,13 @@ import shared
 @main
 struct iOSApp: App {
     
-    init(){
+    init() {
         KoinHelperKt.doInitKoin()
-    }
+        }
     
     var body: some Scene {
         WindowGroup {
-            PostsView()
+        PostsListView()
         }
     }
 }

@@ -2,6 +2,6 @@ package com.kmm.postsapp.data.repository
 
 import com.kmm.postsapp.data.model.Post
 
-interface PostRepository {
+internal interface PostRepository {
     suspend fun fetchPosts(): List<Post>
 }

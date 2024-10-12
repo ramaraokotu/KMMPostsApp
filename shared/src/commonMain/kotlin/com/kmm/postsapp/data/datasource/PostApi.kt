@@ -9,7 +9,7 @@ import kotlinx.serialization.json.Json
 
 internal abstract class PostApi {
     val client = HttpClient {
-        install(ContentNegotiation){
+        install(ContentNegotiation) {
             json(Json {
                 ignoreUnknownKeys = true
                 useAlternativeNames = false
@@ -18,7 +18,7 @@ internal abstract class PostApi {
     }
 
 
-    fun HttpRequestBuilder.pathUrl(){
+    fun HttpRequestBuilder.pathUrl() {
         url {
             takeFrom(BASE_URL)
         }
