@@ -17,7 +17,7 @@ extension PostsListView {
     struct ShowLoading: View {
         var body: some View {
             VStack {
-                ProgressView("Loading...")
+                ProgressView("Loading, please wait…")
                     .padding()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -29,7 +29,7 @@ extension PostsListView {
         
         var body: some View {
             VStack {
-                Text("Error occurred")
+                Text("An error occurred, please try again.")
                     .font(.headline)
                     .foregroundColor(.red)
                     .padding()

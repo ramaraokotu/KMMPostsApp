@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -75,7 +77,10 @@ fun ShowError(text: String) {
 fun PostsList(articles: List<Post>) {
     LazyColumn {
         items(articles.size) { index ->
-            Post(post = articles[index])
+            Column {
+                Post(post = articles[index])
+                HorizontalDivider(color = Color.Gray, thickness = 1.dp)
+            }
         }
     }
 }
@@ -83,7 +88,7 @@ fun PostsList(articles: List<Post>) {
 @Composable
 fun Post(post: Post) {
     Column(
-        modifier = Modifier
+        modifier = Modifier.padding(10.dp)
             .fillMaxWidth()
     ) {
         TitleText(post.title)
@@ -98,9 +103,10 @@ fun TitleText(title: String) {
     if (title.isNotEmpty()) {
         Text(
             text = title,
-            style = MaterialTheme.typography.titleMedium,
+            style = MaterialTheme.typography.titleLarge,
             fontSize = 18.sp,
             maxLines = 2,
+            color = Color.Black,
             modifier = Modifier.padding(5.dp)
         )
     }

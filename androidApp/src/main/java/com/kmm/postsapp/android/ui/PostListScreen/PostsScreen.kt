@@ -15,7 +15,7 @@ fun PostsListRoute(viewModel: PostViewModel) {
 
     val uiState: UiState<List<Post>> by viewModel.uiState.collectAsStateWithLifecycle()
 
-    Column(modifier = Modifier.padding(4.dp)) {
+    Column(modifier = Modifier.padding(horizontal = 10.dp)) {
         PostsListScreen(uiState)
     }
 }
