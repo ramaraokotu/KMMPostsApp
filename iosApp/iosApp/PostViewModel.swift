@@ -21,10 +21,10 @@ class PostViewModel: ObservableObject {
     }
 
     private var allPostsList: [Post] = []
-    private var postsUseCase: GetPostsUseCase
+    private var postRepository: PostRepositoryWrapper
     
-    init(with postsUseCase: GetPostsUseCase = GetPostsUseCase()) {
-        self.postsUseCase = postsUseCase
+    init(with postRepository: PostRepositoryWrapper = PostRepositoryWrapper()) {
+        self.postRepository = postRepository
     }
     
 }
@@ -35,7 +35,7 @@ extension PostViewModel {
         DispatchQueue.main.async {
             Task {
                 do {
-                    let response = try await self.postsUseCase.invoke()
+                    let response = try await self.postRepository.invoke()
                     self.viewState = .content
                     self.allPostsList = response
                     self.displayPosts = self.allPostsList

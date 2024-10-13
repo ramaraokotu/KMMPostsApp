@@ -19,7 +19,6 @@ private val utilityModule = module {
 
 private val domainModule = module {
     single<PostRepository> { PostRepositoryImpl(get()) }
-    factory { GetPostsUseCase() }
 }
 
 private val sharedModules = listOf(domainModule, dataSourceModule, utilityModule)
