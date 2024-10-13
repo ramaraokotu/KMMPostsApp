@@ -7,7 +7,7 @@ _**Kotlin Multiplatform Mobile**_ for developing _Android and iOS_ applications 
 
 It simply loads Posts data from API and Posts will be always loaded from Remote data (from API).
 **Features:**
-- [x] Clean and Simple Material UI 🎨
+- [x] Clean and Simple UI 🎨
 
 
 ### 📱 Preview
