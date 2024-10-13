@@ -50,7 +50,7 @@ This is an Xcode project that builds into an iOS application. It depends on and 
 ## License
 
 ```
-Copyright 2023 Ramarao Kotu
+Copyright 2024 Ramarao Kotu
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
